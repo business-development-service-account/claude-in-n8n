@@ -12,8 +12,8 @@ RUN apk add --no-cache \
     py3-pip \
     bash
 
-# Install Claude CLI
-RUN npm install -g @anthropic/claude-cli
+# Install Claude CLI  
+RUN npm install -g @anthropic-ai/claude-code
 
 # Create a directory for Claude configurations and set proper ownership
 RUN mkdir -p /home/node/.config/claude && \
